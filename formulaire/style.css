@@ -1,0 +1,23 @@
+input {
+    background: no-repeat url("img/search.svg");
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 50px;
+    width: 15px;
+    padding: 1rem;
+    background-size: 22px;
+    background-position: 5px 50%;
+    transition: .75s;
+    height: 15px;
+    content: "";
+}
+
+input:focus {
+    width: 200px;
+    background-position: 5px 50%;
+    padding-left: 40px;
+}
+
+input:not(:placeholder-shown) {
+    color: red;
+}
